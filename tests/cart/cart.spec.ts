@@ -74,6 +74,7 @@ test.describe('Shopping cart (guest)', () => {
     await cartPage.waitUntilLoaded();
     await expect(cartPage.quantityInput(productName)).toHaveValue('2');
   });
+  
 });
 
 

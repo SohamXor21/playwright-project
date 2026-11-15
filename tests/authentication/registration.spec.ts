@@ -70,5 +70,4 @@ test.describe('User registration', () => {
     await expect(page).toHaveURL(/\/auth\/register$/);
   });
  
-
 });
