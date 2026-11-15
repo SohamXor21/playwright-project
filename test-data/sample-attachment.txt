@@ -1,0 +1,2 @@
+Sample attachment used by the contact form file-upload test.
+This file is plain text and intentionally small.

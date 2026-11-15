@@ -1,0 +1,31 @@
+{
+  "invalidCredentials": [
+    {
+      "description": "an email that is not registered",
+      "email": "nobody.registered.here@example.com",
+      "password": "Wrong-Pass-123!"
+    },
+    {
+      "description": "an unregistered email with a very short password",
+      "email": "another.unknown.user@example.com",
+      "password": "Wrong-Pass-456!"
+    }
+  ],
+  "invalidEmailFormats": ["plainaddress", "missing-at-sign.example.com", "two@@example.com"],
+  "weakPasswords": ["a", "abc1", "short"],
+  "registrationRequiredFields": [
+    "first-name",
+    "last-name",
+    "dob",
+    "street",
+    "postal_code",
+    "house_number",
+    "city",
+    "state",
+    "country",
+    "phone",
+    "email",
+    "password"
+  ],
+  "billingRequiredFields": ["street", "city", "state", "postal_code"]
+}

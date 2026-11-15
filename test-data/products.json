@@ -1,0 +1,6 @@
+{
+  "searchTerms": ["pliers", "hammer"],
+  "noResultTerm": "zzzxqwvk",
+  "sortOptions": ["name,asc", "name,desc", "price,asc", "price,desc"],
+  "filterCategories": ["Pliers", "Hammer"]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "playwright-ecommerce-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript end-to-end and API test framework for https://practicesoftwaretesting.com (Toolshop demo app)",
+  "scripts": {
+    "api-test":"npx playwright test tests/api/api.spec.ts --headed",
+    "login-test":"npx playwright test tests/authentication/login.spec.ts --headed",
+    "registration-test":"npx playwright test tests/authentication/registration.spec.ts --headed",
+    "cart-test":"npx playwright test tests/cart/cart.spec.ts --headed",
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:api": "playwright test --project=api",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:debug": "playwright test --project=chromium --debug",
+    "test:trace": "playwright test --project=chromium --trace on",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "codegen": "playwright codegen https://practicesoftwaretesting.com"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.0"
+  }
+}
